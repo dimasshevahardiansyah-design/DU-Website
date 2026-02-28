@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #0f0f1a, #1a0033);
+    color: white;
+}
+
+/* NAVBAR */
+nav {
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    padding: 15px 50px;
+    border-bottom: 2px solid #00f0ff;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo {
+    width: 50px;
+    border-radius: 50%;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 120px 20px;
+}
+
+.hero-logo {
+    width: 160px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    box-shadow: 0 0 30px #00f0ff;
+}
+
+.hero h1 {
+    font-size: 55px;
+    background: linear-gradient(90deg, #00f0ff, #ff00ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+    margin-top: 10px;
+    color: #ccc;
+}
+
+/* BUTTON */
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 14px 35px;
+    background: linear-gradient(90deg, #00f0ff, #ff00ff);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: 0.3s;
+    box-shadow: 0 0 20px #00f0ff;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px #ff00ff;
+}
+
+/* PLAYERS */
+.players {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.players h2 {
+    font-size: 35px;
+    margin-bottom: 40px;
+    background: linear-gradient(90deg, #00f0ff, #ff00ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 25px;
+    margin: 20px auto;
+    width: 320px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 0, 255, 0.3);
+    transition: 0.3s;
+    box-shadow: 0 0 15px rgba(0, 240, 255, 0.3);
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 25px #ff00ff;
+}
+
+.rank {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: gold;
+}
+
+/* GALLERY */
+.gallery {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.gallery h2 {
+    font-size: 35px;
+    margin-bottom: 40px;
+    background: linear-gradient(90deg, #00f0ff, #ff00ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.gallery-container img {
+    width: 300px;
+    border-radius: 15px;
+    transition: 0.4s;
+    box-shadow: 0 0 20px rgba(0, 240, 255, 0.3);
+}
+
+.gallery-container img:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 30px #ff00ff;
+}
